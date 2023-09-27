@@ -17,7 +17,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/headerimage1.jpg);
+    background-image: url(images/image3_\(2\)-transformed.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -33,13 +33,13 @@ nav{
 }
 
 .logo{
-    font-size: 48px;
+    font-size: 60px;
     cursor: pointer;
     font-weight: 900;
     color: rgb(68, 3, 66);
 }
 .logo-end{
-    font-size: 38px;
+    font-size: 48px;
     color: white;
     font-weight: 900;
 }
@@ -279,8 +279,11 @@ form .btn2{
 nav .fa-solid{
     display: none;
 }
+.progress-bars-wrapper {
+    padding-bottom: 10rem;
+}
 
-.profress-bar {
+.progress-bar {
     width: 40rem;
     height: 2rem;
     background-color: #ccc;
@@ -289,26 +292,27 @@ nav .fa-solid{
     box-shadow: 0.2rem 0.2rem 1rem #555;
     position: relative;
 }
-.progress-percent {
-    width: 90%;
-    height: 100%;
-    background-color: #e41c6f;
-    border-radius: 0.3rem;
-    transition: all 1s ease-in-out;
-}
-.progress-text{
+
+.progress-text {
     position: absolute;
     left: 1rem;
-    font-size: 1.5rem;
-    color: white;
-    font-size: 18PX;
+    font-size: 1rem;
+    color: #fff;
 }
+
 .progress-text span {
     margin: 0 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 
+.progress-percent {
+    width: 80%;
+    height: 100%;
+    background-color: #e41c6f;
+    border-radius: 0.3rem;
+    
+}
 @media only screen and (max-width:600px){
     .header-text{
         margin-top: 100%;
@@ -359,23 +363,22 @@ nav .fa-solid{
         flex-basis: 100%;
     }
     .progress-bars-wrapper {
-        padding-bottom: 20px;
-        
+        padding-bottom: 10rem;
     }
     .progress-bar {
-            width: 20rem;
-            height: 2rem;
-            background-color: #ccc;
-            margin: 1.5rem 0;
-            border-radius: 0.3rem;
-            box-shadow: 0.2rem 0.2rem 1rem #555;
-            position: relative;
-            transition: all 0.5s;    
+        width: 20rem;
+        height: 2rem;
+        background-color: #ccc;
+        margin: 1.5rem 0;
+        border-radius: 0.3rem;
+        box-shadow: 0.2rem 0.2rem 1rem #555;
+        position: relative;
+        transition: all 0.5s;
     }
     .progress-text {
         position: absolute;
         left: 1rem;
-        font-size: 15px;
+        font-size: 1.5rem;
         color: #fff;
     }
     .progress-text span {

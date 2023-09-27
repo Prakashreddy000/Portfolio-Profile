@@ -37,7 +37,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis magni tenetur, quo accusamus perferendis commodi sequi rerum fuga, saepe doloribus, maiores atque itaque repellendus harum suscipit nam nisi molestiae nesciunt!</p>
+                    <p>Highly-motivated employee with desire to take on new challenges. Strong work ethic, adaptability and exceptional interpersonal skills. Adept at working effectively unsupervised and quickly mastering new skills.</p>
                     <div class="tabs">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -45,30 +45,42 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <div class="progress-bars-wrapper">
-                        <div class="profress-bar">
-                            <p class="progress-text">HTML & CSS  <span>90</span> %</p>
-                            <div class="progress-percent" data-progress="90" style="width: 90%"></div>
-                        </div>
-                        
-                        <div class="profress-bar">
-                            <p class="progress-text">jAVASCRIPT <span>60</span> %</p>
-                            <div class="progress-percent" data-progress="60" style="width: 60%"></div>
-                        </div>
-                        <div class="profress-bar">
-                            <p class="progress-text">MYsql <span>80</span> %</p>
-                            <div class="progress-percent" data-progress="80"></div>
-                        </div>
-                        <div class="profress-bar">
-                            <p class="progress-text">ReactJS  <span>60</span> %</p>
-                            <div class="progress-percent" data-progress="60"></div>
-                        </div>
+                            <div class="progress-bar">
+                                <p class="progress-text">
+                                    HTML & CSS
+                                    <span>90</span>%
+                                </p>
+                                <div class="progress-percent" data-progress="90" style="width: 90%"></div>
+                            </div>
+
+                            <div class="progress-bar">
+                                <p class="progress-text">
+                                    JavaScript
+                                    <span>60</span>%
+                                </p>
+                                <div class="progress-percent" data-progress="60" style="width: 60%"></div>
+                            </div>
+
+
+                            <div class="progress-bar">
+                                <p class="progress-text">
+                                    MYSQL
+                                    <span>75</span>%
+                                </p>
+                                <div class="progress-percent" data-progress="75" style="width: 75%"></div>
+                            </div>
+                            <div class="progress-bar">
+                                <p class="progress-text">
+                                    REACTJS
+                                    <span>60</span>%
+                                </p>
+                                <div class="progress-percent" data-progress="60" style="width: 60%"></div>
+                            </div>
                         </div>              
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>React Developer</span> <br>Designing Web/App interfaces</li>
-                            <li><span>React Developer</span> <br>Designing Web/App interfaces</li>
-                            <li><span>React Developer</span> <br>Designing Web/App interfaces</li>
+                            <li><span>ML Data Associate Amazon (2020-Current)</span> <br></li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -146,6 +158,27 @@
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
         var sidemenu = document.getElementById("sidemenu");
+        const progressbars = document.querySelectorAll(".progress-percent")
+       
+
+    function showprogress() {
+        progressbars.forEach(progressbar => {
+            const value = progressbar.dataset.progress;
+            progressbar.style.opacity = 1;
+            progressbar.style.width = `${value}%`
+            progressbar.style.transition = `all 1s ease-in-out`
+
+        })
+    }
+
+    function hideprogress() {
+        progressbars.forEach(
+            p => {
+                p.style.opacity = 0;
+                p.style.width = 0;
+            }
+        )
+    }
 
         function opentab(tabname){
             for(tablink of tablinks){
