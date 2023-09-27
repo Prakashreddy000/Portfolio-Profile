@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prakash Profile</title>
     <link rel="stylesheet" href="index.css"/>
@@ -14,8 +15,8 @@
             <span class="logo">Prak<span class="logo-end">ash.</span></span>
             <ul id="sidemenu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#contact">Contact</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>               
                 <li><a href="#services">More</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
@@ -23,10 +24,11 @@
         </nav>
         <div class="header-text">
             <p>React Developer</p>
-            <h1>Hi, I'm <span>Prakash Reddy</span> <br> from India</h1>
+            <h1>Hi, I'm <span>Prakash Reddy</span> <br> from India.</h1>
         </div>
     </div>
     </div>
+
     <div id="about">
         <div class="container">
             <div class="row">
@@ -42,11 +44,25 @@
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>React Developer</span> <br>Designing Web/App interfaces</li>
-                            <li><span>React Developer</span> <br>Designing Web/App interfaces</li>
-                            <li><span>React Developer</span> <br>Designing Web/App interfaces</li>
-                        </ul>
+                        <div class="progress-bars-wrapper">
+                        <div class="profress-bar">
+                            <p class="progress-text">HTML & CSS  <span>90</span> %</p>
+                            <div class="progress-percent" data-progress="90" style="width: 90%"></div>
+                        </div>
+                        
+                        <div class="profress-bar">
+                            <p class="progress-text">jAVASCRIPT <span>60</span> %</p>
+                            <div class="progress-percent" data-progress="60" style="width: 60%"></div>
+                        </div>
+                        <div class="profress-bar">
+                            <p class="progress-text">MYsql <span>80</span> %</p>
+                            <div class="progress-percent" data-progress="80"></div>
+                        </div>
+                        <div class="profress-bar">
+                            <p class="progress-text">ReactJS  <span>60</span> %</p>
+                            <div class="progress-percent" data-progress="60"></div>
+                        </div>
+                        </div>              
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
@@ -58,15 +74,18 @@
                     <div class="tab-contents" id="education">
                         <ul>
                             <li><span>2019</span> <br>B.tech (Electronics and communication engineering) from Avanthi instution, Hyderabad</li>
-                            <li><span>2015</span> <br>Intermediate from Sri Gayatri Junior collee</li>
+                            <li><span>2015</span> <br>Intermediate from Sri Gayatri Junior college</li>
                             <li><span>2013</span> <br>SSC from SRKSV high school</li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
-
+        
     </div>
+    </div>
+
+   
+
     <div id="services">
         <div class="container">
             <h1>My Services</h1>
@@ -74,7 +93,7 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>FrontEnd</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quidem architecto! Dolores ipsa nihil possimus tenetur, consequatur ipsum eum odio ea neque soluta qui odit pariatur quaerat non sapiente voluptatum.</p>
+                    <p>Developed application using ReactJs and tailwind css by making live API which is available in github. </p>
                     <a href="#">More</a>
                 </div>
                 <div>
