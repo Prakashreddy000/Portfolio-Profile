@@ -314,6 +314,9 @@ nav .fa-solid{
     
 }
 @media only screen and (max-width:600px){
+    #header{
+        background-image: url(images/mobile\ img.jpeg);
+    }
     .header-text{
         margin-top: 100%;
         font-size: 26px;
@@ -378,12 +381,12 @@ nav .fa-solid{
     .progress-text {
         position: absolute;
         left: 1rem;
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: #fff;
     }
     .progress-text span {
         margin: 0 0.5rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 700;
     }
     .progress-percent {

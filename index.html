@@ -23,7 +23,7 @@
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>React Developer</p>
+            <p>Front-End Developer</p>
             <h1>Hi, I'm <span>Prakash Reddy</span> <br> from India.</h1>
         </div>
     </div>
@@ -105,8 +105,8 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>FrontEnd</h2>
-                    <p>Developed application using ReactJs and tailwind css by making live API which is available in github. </p>
-                    <a href="#">More</a>
+                    <p>Developed application using ReactJs and tailwind css by making live API call. </p>
+                    <a href="https://github.com/Prakashreddy000/header-react">More</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop"></i>
@@ -138,7 +138,7 @@
                         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
                     </div>
-                    <a href="images/image3.jpeg" download class="btn">Download Resume</a>
+                    <a href="images/resume.jpeg" download class="btn">Download Resume</a>
                 </div>
                 <div class="contact-right">
                     <form>
@@ -157,28 +157,7 @@
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
-        var sidemenu = document.getElementById("sidemenu");
-        const progressbars = document.querySelectorAll(".progress-percent")
-       
-
-    function showprogress() {
-        progressbars.forEach(progressbar => {
-            const value = progressbar.dataset.progress;
-            progressbar.style.opacity = 1;
-            progressbar.style.width = `${value}%`
-            progressbar.style.transition = `all 1s ease-in-out`
-
-        })
-    }
-
-    function hideprogress() {
-        progressbars.forEach(
-            p => {
-                p.style.opacity = 0;
-                p.style.width = 0;
-            }
-        )
-    }
+        var sidemenu = document.getElementById("sidemenu");      
 
         function opentab(tabname){
             for(tablink of tablinks){
